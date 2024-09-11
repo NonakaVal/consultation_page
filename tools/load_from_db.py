@@ -247,6 +247,7 @@ def exibir_tipos_cadastrados(mycursor):
                 st.write(f"{editora[0]} - {editora[1]} - {editora[2]}")
         else:
             st.write("Nenhuma ondicao cadastrada.")
+            
 def consultar_historico():
 
 
