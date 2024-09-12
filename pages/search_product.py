@@ -13,6 +13,15 @@ if mydb and mycursor:
 with st.form("query_form"):
     nome_produto = st.text_input("Buscar por Nome do Produto")
     submitted = st.form_submit_button("Buscar")
+# with st.expander("con"):
+#         st.markdown("##### condicao Cadastradas")
+#         mycursor.execute("SELECT * FROM condicao_descricao")
+#         editoras = mycursor.fetchall()
+#         if editoras:
+#             for editora in editoras:
+#                 st.write(f"{editora[0]} - {editora[1]} - {editora[2]}")
+#         else:
+#             st.write("Nenhuma ondicao cadastrada.")
 
 with st.sidebar:
     id_produto = st.text_input("Buscar por ID do Produto")
